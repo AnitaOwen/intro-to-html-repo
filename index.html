@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to HTML</title>
+    <!-- HEAD gives information to the browser -->
+</head>
+
+<body>
+    <!-- Block tags: take up the entire width of the line && DO NOT allow anything to be next to them <p>Hello, world!</p> -->
+    <!-- Inline tag: take ONLY the space of their content, and will allow other tags to be next to them <a href="">Amazon</a> -->
+    <header>
+        <h1>Cookie Shop Application</h1>
+        <nav>
+            <!-- href is an attribute. Attributes give tags information -->
+            <!-- href is specific to anchor tags bc they contain the address to the page you want to go to -->
+            <a href="https://amazon.com">Amazon</a>
+            <!-- target attribute allows us to open  -->
+            <a href="https://soundcloud.com/anitamagenta" target="_blank">Soundcloud</a>
+            <a href="https://google.com" target="_blank">Google</a>
+            <a href="./animal.html">Fav Animal</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Welcome to our cookie shop!</h2>
+        <p>Choose from the options below:</p>
+
+        <!-- Two types of lists: ul => unordered list, ol => ordered list-->
+        <ul>
+            <!-- li tags are list item tags to go inside of ol or ul tags -->
+            <li>See Menu</li>
+            <li>Add Cookie to cart</li>
+            <li>Edit Cart</li>
+            <li>Delete Cart</li>
+            <li>See all Vegan Options</li>
+            <li>See all Nut-free Options</li>
+            <li>
+                <span>
+                  <a href="portfolio.html" target="_blank">See my portfolio</a>
+                </span>
+            </li>
+              
+        </ul>
+
+        <!-- <code>: The Inline Code element -->
+        <!-- To represent multiple lines of code, wrap the <code> element within a <pre> element. The <code> element by itself only represents a single phrase of code or line of code. -->
+        <aside>
+            <p>
+                The function <code>selectAll()</code> highlights all the text in the input
+                field so the user can, for example, copy or delete the text.
+            </p>
+            <code>if (bike) {console.log('yay!')}</code>
+        </aside>
+    </main>
+    <footer>
+        <!-- span is an inline-level element, div is a block level element -->
+        <!-- span can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang -->
+        <h2><span>Thank you</span> for your contributions!</h2>
+
+        <!--strong is meant for emphasis. It is NOT meant to be used for styling. Instead, it is to help clarify the text. -->
+        Contact <strong>us!</strong>
+
+        <!--em is emphasis, the default appearance will be italics -->
+        <em>Happy cookie shopping!</em>
+        
+
+        <!-- div is a block level element, span is an inline-level element -->
+        <!-- div should be used only when no other semantic element (such as <article> or <nav>) is appropriate. -->
+        <!-- div has no effect on the content or layout until styled in some way using CSS -->
+        <div>
+            <p>
+              Any kind of content here. Such as &lt;p&gt;, &lt;table&gt;. You name it!
+            </p>
+        </div>
+          
+    </footer>
+
+    <footer>
+        <h4>Steps to use app</h4>
+        <ol>
+            <li></li>
+        </ol>
+    </footer>
+</body>
+</html>
